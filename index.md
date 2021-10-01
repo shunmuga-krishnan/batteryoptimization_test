@@ -52,4 +52,24 @@ startActivity(intent);
                     
 ```
 
+## Access Whitelist from the adb access
+
+### To know the list of Whitelisted Apps
+
+```
+adb shell dumpsys deviceidle whitelist
+```
+
+### To add a package to the Whitelist
+
+```
+adb shell dumpsys deviceidle whitelist +<package_name>
+```
+
+### To remove a package from the Whitelist
+
+```
+adb shell dumpsys deviceidle whitelist -<package_name>
+```
+
 
